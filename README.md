@@ -9,7 +9,17 @@ Tutto il materiale che pubblicherò sarà trattato in forma di divulgativa e di 
 # OBIETTIVI
 
 - Aiutare, nel mio piccolo, chi come me si avvicina al mondo della _Cybersecurity_ e migliorarmi con consigli dai più esperti.
-- Raggiungere con motivazione e dedizione il traguardo di una posizione lavorativa nel settore della sicurezza informatica. 
+- Raggiungere con motivazione e dedizione il traguardo di una posizione lavorativa nel settore della sicurezza informatica.
+
+# LINGUE
+
+- ITA    🟢🟢🟢🟢
+
+- ENG    🟢🟢🟢⭕
+
+- FRA    🟢⭕⭕⭕
+
+- ESP    🟢⭕⭕⭕
 
 # CONTATTI
 
