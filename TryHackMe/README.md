@@ -1,6 +1,10 @@
 # TryHackMe
 
- # [TryHackMe/Manganaccio](https://tryhackme.com/p/Manganaccio) (TOP 1%)
+![d714087176471d414f5c28b6b029237c](https://github.com/Manganaccio/Manganaccio/assets/137283468/1f78bb81-30e5-4de1-b2e2-a41a17d665e2)
+
+
+
+# [Manganaccio](https://tryhackme.com/p/Manganaccio) (TOP 1%)
   
    <img src="https://tryhackme-badges.s3.amazonaws.com/Manganaccio.png" alt="TryHackMe">
 
