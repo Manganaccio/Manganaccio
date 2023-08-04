@@ -47,13 +47,13 @@ __________
 
   # user.txt
 
-  - Per ottenere la shell sarà necessario fare l'upload del file reverse-shell.php di PentestMonkey, cambiando l'indirizzo IP (quello della macchina attaccante) e il numero della porta;
-  - prima di eseguire l'upload cambiare l'estensione del file in "php5" perchè il sito non ammette il caricamento di file in "php";
+  - Per ottenere la shell sarà necessario fare l'upload del file reverse-shell.php di PentestMonkey, cambiando l'indirizzo IP (quello della macchina attaccante) e il numero della porta
+  - prima di eseguire l'upload cambiare l'estensione del file in "php5" perchè il sito non ammette il caricamento di file in "php"
 
  ![Istantanea_2023-07-31_21-48-48](https://github.com/Manganaccio/Manganaccio/assets/137283468/5f9520c2-c2ea-4655-abb1-870567231212)
 
-  - in un terminale eseguire il comando: nc -lvnp PORT (la porta da selezionare dovrà essere la medesima inserita nel file reverse-shell);
-  - nel browser navigare nella pagina http://TARGET-IP/uploads/ e aprire la reverse-shell caricata in precedenza;
+  - in un terminale eseguire il comando: nc -lvnp PORT (la porta da selezionare dovrà essere la medesima inserita nel file reverse-shell)
+  - nel browser navigare nella pagina http://TARGET-IP/uploads/ e aprire la reverse-shell caricata in precedenza
 
  ![Istantanea_2023-07-31_22-16-49](https://github.com/Manganaccio/Manganaccio/assets/137283468/df9f36bc-9f33-4a49-a1e0-f103e1a86703)
 
@@ -79,7 +79,7 @@ _________
 
 # root.txt
 
-- Navigare su [GTFOBins](https://gtfobins.github.io/) e nella pagina di python cercare la voce SUID (come suggerito a inizio task);
+- Navigare su [GTFOBins](https://gtfobins.github.io/) e nella pagina di python cercare la voce SUID (come suggerito a inizio task)
 - nel terminale digitare il comando: /usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 - navigare nella cartella root per trovare la flag root.txt o eseguire il comando: cat /root/root.txt
 
