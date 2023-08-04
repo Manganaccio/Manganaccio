@@ -32,6 +32,8 @@ ____________
 
 -  la prima flag si trova facilmente nella cartella /home/www-data
 
+        Answer: 6470e394cbf6dab6a91682cc8585059b
+
 # Root.txt
 
 -  per trovare la seconda flag sarà necessario fare una piccola scalata dei privilegi; ritornando nella pagina web si ha un'ulteriore informazione che si può sfruttare per ottenere l'accesso al profilo root, sarà necessario quindi leggere il file database.php
@@ -43,3 +45,5 @@ ____________
 ![Istantanea_2023-08-04_10-21-38](https://github.com/Manganaccio/Manganaccio/assets/137283468/5064c3f6-b2f2-4268-b0b0-87795cd40025)
 
 ![Istantanea_2023-08-04_10-22-43](https://github.com/Manganaccio/Manganaccio/assets/137283468/5ff789e4-cacc-4c55-9064-1d71d1ee88ba)
+
+        Answer: b9bbcb33e11b80be759c4e844862482d
