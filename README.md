@@ -1,6 +1,6 @@
 # WHOAMI
 
-Ciao 👋, sono **Manganaccio**, dopo gli studi in giurisprudenza con tesi in informatica forense dal titolo _"L'informatica forense nei casi di frode informatica commessa per mezzo del phishing"_, ho deciso di intraprendere un ulteriore percorso di studio in ambito cybersecurity. Spinto dalla curiosità di apprendere nuoci argomenti e dall'interesse per la sicurezza informatica e l'Ethical Hacking ho iniziato a studiare da autodidatta seguendo inizialmente i corsi proposti da TryHackMe per poi estendere l'apprendimento anche attraverso altre piattaforme quali TCM Security e PortSwigger Academy.
+Ciao 👋, sono **Manganaccio**, dopo gli studi in giurisprudenza con tesi in informatica forense dal titolo _"L'informatica forense nei casi di frode informatica commessa per mezzo del phishing"_, ho deciso di intraprendere un ulteriore percorso di studio in ambito cybersecurity. Spinto dalla curiosità di apprendere nuovi argomenti e dall'interesse per la sicurezza informatica e l'Ethical Hacking ho iniziato a studiare da autodidatta seguendo inizialmente i corsi proposti da TryHackMe per poi estendere l'apprendimento anche attraverso altre piattaforme quali TCM Security e PortSwigger Academy.
 
 # CONTENUTI
 
