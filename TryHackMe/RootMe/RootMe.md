@@ -1,5 +1,7 @@
 # RootMe
 
+_Difficulty: Easy_
+
 _________
 
 # Task 1 - Deploy the machine
