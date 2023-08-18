@@ -1,6 +1,6 @@
 # RootMe
 
-_Difficulty: Easy_
+_Difficoltà: Easy_
 
 _________
 
