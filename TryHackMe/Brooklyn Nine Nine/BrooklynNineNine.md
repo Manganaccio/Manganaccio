@@ -1,5 +1,6 @@
 # Brooklyn Nine Nine
 
+_Difficoltà: Easy_
 __________________
 
 # Task 1 - Deploy and get hacking
