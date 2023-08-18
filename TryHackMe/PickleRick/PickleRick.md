@@ -1,5 +1,6 @@
 #  Pickle Rick
 
+_Difficulty: Easy_
 _________________
 
 #  Task 1 - Pickle Rick
