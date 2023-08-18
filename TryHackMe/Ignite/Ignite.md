@@ -1,5 +1,6 @@
 # Ignite
 
+_Difficoltà: Easy_
 ____________
 
 # Task 1 - Root it!
