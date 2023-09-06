@@ -15,3 +15,6 @@
 ![THM-JrPenetrationTester](https://github.com/Manganaccio/Manganaccio/assets/137283468/58312019-3765-41cd-ab97-01b69e01a917)
 
 ![THM-CompTIAPentest+](https://github.com/Manganaccio/Manganaccio/assets/137283468/45252e2b-a748-44ac-806e-ae50191f9dc0)
+
+![THM-CyberDefence](https://github.com/Manganaccio/Manganaccio/assets/137283468/5f56f38f-a558-4610-a160-494747dbd6f1)
+
