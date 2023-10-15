@@ -74,8 +74,18 @@ _____________________
 
 ![6](https://github.com/Manganaccio/Manganaccio/assets/137283468/9fe35ef8-a693-4f11-ae6e-1dc4929ac8a5)
 
-- 
+- visitiamo la directory trovata, possiamo ora rispondere alla seconda domanda
 
+# What is the name of the 1st pirate you meet navigating the Apache Sea?
+    Donquixote Doflamingo
+
+- nella stessa pagina c'è un'immagine nera che al passaggio del mouse scopre un'altra immagine con una serie di informazioni poco chiare, visitiamo quindi il codice sorgente e troviamo l'immagine in chiaro denominata        rabbit_hole.png
+
+- una volta aperta troviamo tre codici, il primo in esadecimale, il secondo in Base91 ed il terzo è cifrato in Vigenere
+
+- decifrato il primo ed il secondo codice otteniamo la chiave decodificare l'ultimo... _Doflamingo is still standing_! Come suggerito dal nome dell'immagine siamo in un vicolo cieco, nessuna informazione utile!
+
+- 
 
 
 
