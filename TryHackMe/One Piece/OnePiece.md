@@ -131,16 +131,15 @@ Answer: Buggy the Clown
 
 - concentriamoci quindi sull'accesso tramite username e password, la stessa pagina ci suggerisce _Speaking about brute force, Kaido is unbeatable._:
 
-   - 1: scarichiamo l'immagine kaido-jpeg e verifichiamo se al suo interno sono presenti alcuni dati importanti. Il solo uso di steghide non ci consente di estrarre nulla in quanto dobbiamo essere in possesso di una             passphrase
-   - 2: usiamo un brute force attraverso un altro tool chiamato stegseek che consente di rilevare in automatico eventuali passphrase da usare con steghide
-   - 3: stegseek kaido.jpeg
- 
+     - 1: scarichiamo l'immagine kaido-jpeg e verifichiamo se al suo interno sono presenti alcuni dati importanti. Il solo uso di steghide non ci consente di estrarre nulla in quanto dobbiamo essere in possesso di una             passphrase
+     - 2: usiamo un brute force attraverso un altro tool chiamato stegseek che consente di rilevare in automatico eventuali passphrase da usare con steghide
+     - 3: stegseek kaido.jpeg
+     - 4: trovato l'username bisogna trovare la password, questa volta usiamo hydra con i seguenti comandi
+     - 5: hydra -l K1ng_0f_th3_B3@sts -P /usr/share/wordlists/rockyou.txt onepiece.thm http-form-post "/0n1g4sh1m4.php:user=^USER^&password=^PASS^&submit_creds=Login:ERROR"
+
 ![10](https://github.com/Manganaccio/Manganaccio/assets/137283468/7be65c72-1cef-4794-b0fc-af6febad59be)
    
 ![11](https://github.com/Manganaccio/Manganaccio/assets/137283468/fa70a747-d1ec-43f3-b00d-25c55084c3b0)
-
-  - 4: trovato l'username bisogna trovare la password, questa volta usiamo hydra con i seguenti comandi
-  - 5: hydra -l K1ng_0f_th3_B3@sts -P /usr/share/wordlists/rockyou.txt onepiece.thm http-form-post "/0n1g4sh1m4.php:user=^USER^&password=^PASS^&submit_creds=Login:ERROR"
 
 - una volta inserite le credenziali 
  
