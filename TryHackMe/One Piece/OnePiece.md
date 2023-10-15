@@ -27,11 +27,11 @@ _____________________
 
 - scarichiamo il file di testo welcome.txt ed accediamo alla directory -the_whale_tree, all'interno di quest'ultima scarichiamo i due file .road_poneglyph.jpeg e .secret_room.txt
 - # welcome.txt
-  Welcome to Zou. It is an island located on the back of a massive, millennium-old elephant named Zunesha that roams the New World.
-  Except this, there is not much to say about this island.
+  _Welcome to Zou. It is an island located on the back of a massive, millennium-old elephant named Zunesha that roams the New World.
+  Except this, there is not much to say about this island._
 
 - # .secret_room.txt
-  Inuarashi: You reached the center of the Whale, the majestic tree of Zou.
+  _Inuarashi: You reached the center of the Whale, the majestic tree of Zou.
   Nekomamushi: We have hidden this place for centuries.
   Inuarashi: Indeed, it holds a secret.
   Nekomamushi: Do you see this red stele ? This is a Road Poneglyph.
@@ -43,7 +43,35 @@ _____________________
   Nekomamushi: The other issue is the power of Big Mom and Kaido, they are Emperor due to their strength, you won't be able to take them down easily.
   Luffy: I will show them, there can be only one Pirate King and it will be me !!
   Inuarashi: There is another issue regarding the Road Poneglyph.
-  Nekomamushi: They are written in an ancient language and a very few people around the world can actually read them.
+  Nekomamushi: They are written in an ancient language and a very few people around the world can actually read them._
 
   # What is the name of the tree that contains the 1st Road Poneglyph?
       the whale
+
+- l'immagine .road_poneglyph.jpeg contiene dei dati che possiamo estrarre attraverso il comando steghide extract -sf .road_poneglyph.jpeg
+- i dati estratti sono una serie di caratteri che possiamo decodificare prima in Base32, poi in codice morse, poi in binary ed infine in hex
+- unavolta decodificato si ottiene una serie di caratteri in Base64, essendo questo il primo di quattro Poneglyph anche a seguito di decodifica non si ottiene alcuna informazione utile
+  
+- visitiamo ora la pagina web essendo la porta 80 aperta
+- guardando il codice sorgente si può notare un'altra frase da decodificare
+
+![4](https://github.com/Manganaccio/Manganaccio/assets/137283468/948750ac-9db9-4765-b726-3f13c885266c)
+
+- è necessario decodificarla prima in Base32, poi in Base64 ed infine in Base85
+- _Nami ensures there are precisely 3472 possible places where she could have lost it._
+
+(il suggerimento fornito da TryHackMe per rispondere alla successiva è: Only Sea, It's Not Terrible, guardando bene le lettere maiuscole la parola è OSINT quindi sarà apportuno fare delle ricerche su google per ottenere una wordlist utile per trovare Nami)
+
+- provvediamo ad eseguire due scansioni delle directories con gobuster, una con una wordlist già presente nel sistema (common.txt va benissimo), l'altra scansione invece con la wordlist trovata tramite OSINT (LogPose.txt)
+
+- gobuster dir -u http://onepiece.thm/  -w /usr/share/wordlists/dirb/common.txt
+
+![5](https://github.com/Manganaccio/Manganaccio/assets/137283468/ed5bb2a1-65c9-43a7-b802-50f96597f0bf)
+
+
+
+
+
+
+
+  
