@@ -104,6 +104,63 @@ _____________________
 # What is the name of the 2nd island you reach navigating the Apache Sea?
     Answer: Whole Cake
 
+- visitando la pagina troviamo un box dove poter digitare delle parole, ma qualsiasi carattere, parola o frase inseriamo la risposta è _I did not expect that._ 
+
+- analizziamo quindi i cookie e vediamo che il valore fornito è _NoCakeForYou_
+
+- possiamo cambiare questo valore con _cakesforyou_ o semplicemente _cakes_, ricaricando la pagina otteniamo così la seconda parte del Poneglyph da decodificare ed il suggerimento utile per proseguire la navigazione
+
+ ![9](https://github.com/Manganaccio/Manganaccio/assets/137283468/b1075d00-798f-4d27-993f-d9d12ae85d2d)
+
+ - navigando nella nuova pagina otteniamo per prima cosa la risposta alla quarta domanda
+
+# What is the name of the friend you meet navigating the Apache Sea?
+Answer: Buggy the Clown
+
+- per proseguire nel viaggio Buggy ci chiederà di partecipare ad un gioco, la scelta è ricaduta su _Brain Teaser_. Attraverso questo mini gioco si può ottenere la chiave per proseguire attraverso due modi
+
+   - 1: ispezionando la pagina e cambiando i valori della rotazione del cubo;
+   - 2: sempre ispezionando la pagina e guardando il valore _id: back_ una volta esteso lo script si ottiene la directory da visitare
+ 
+- la nuova pagina contiene diversi elementi che possono tornare utili: la risposta alla quinta domanda, le immagini, due box dove inserie username e password e la possibilità di caricare dei file
+
+# What is the name of the 2nd Emperor you meet navigating the Apache Sea?
+    Answer: Kaido of the Beasts
+
+- andando per esclusione se dovessimo caricare dei file, ad esempio una reverse shell, non si ottiene elemento utile in quanto non sappiamo dove e come trovare una pagina di upload
+
+- concentriamoci quindi sull'accesso tramite username e password, la stessa pagina ci suggerisce _Speaking about brute force, Kaido is unbeatable._:
+
+   - 1: scarichiamo l'immagine kaido-jpeg e verifichiamo se al suo interno sono presenti alcuni dati importanti. Il solo uso di steghide non ci consente di estrarre nulla in quanto dobbiamo essere in possesso di una             passphrase
+   - 2: usiamo un brute force attraverso un altro tool chiamato stegseek che consente di rilevare in automatico eventuali passphrase da usare con steghide
+   - 3: stegseek kaido.jpeg
+ 
+![10](https://github.com/Manganaccio/Manganaccio/assets/137283468/7be65c72-1cef-4794-b0fc-af6febad59be)
+   
+![11](https://github.com/Manganaccio/Manganaccio/assets/137283468/fa70a747-d1ec-43f3-b00d-25c55084c3b0)
+
+  - 4: trovato l'username bisogna trovare la password, questa volta usiamo hydra con i seguenti comandi
+  - 5: hydra -l K1ng_0f_th3_B3@sts -P /usr/share/wordlists/rockyou.txt onepiece.thm http-form-post "/0n1g4sh1m4.php:user=^USER^&password=^PASS^&submit_creds=Login:ERROR"
+
+- una volta inserite le credenziali 
+ 
+
+
+    
+  
+     
+
+
+      
+
+
+
+
+
+
+
+
+
 
 
 
