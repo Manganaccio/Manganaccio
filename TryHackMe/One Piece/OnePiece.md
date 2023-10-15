@@ -167,7 +167,24 @@ You want your revenge. Let's take him down !_
 
 ![16](https://github.com/Manganaccio/Manganaccio/assets/137283468/77516e96-0eb1-4a9a-8eb0-b083b0c73658)
 
+- a questo punto siamo liberi di accedere ai file della directory _teach_ e leggere il contenuto del file _luffy_vs_teach.txt_ che ci consente di rispondere alla domanda e del file .password.txt che ci permette invece     di avere la shell dell'utente _7uffy_vs_T3@ch_
+- # luffy_vs_teach.txt
+  _This fight will determine who can take the One Piece and who will be the next Pirate King.
+These 2 monsters have a matchless will and none of them can let the other prevail.
+Each of them have the same dream, be the Pirate King.
+For one it means: Take over the World.
+For the other: Be the freest man in the World.
+Each of their hit creates an earthquake felt on the entire island.
+But in the end, Luffy thanks to his willpower won the fight.
+Now, he needs to find the One Piece._
 
+  # What allowed Luffy to win the fight?
+      Answer: willpower
+
+- quasi giunti al termine di questa avventura rimane da ottenere i privilegi di root
+- sudo -l
+ 
+![17](https://github.com/Manganaccio/Manganaccio/assets/137283468/19861279-c743-4ac5-871c-e5b4ef6b155e)
 
 
     
