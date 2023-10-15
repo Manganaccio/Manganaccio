@@ -60,13 +60,22 @@ _____________________
 - è necessario decodificarla prima in Base32, poi in Base64 ed infine in Base85
 - _Nami ensures there are precisely 3472 possible places where she could have lost it._
 
-(il suggerimento fornito da TryHackMe per rispondere alla successiva è: Only Sea, It's Not Terrible, guardando bene le lettere maiuscole la parola è OSINT quindi sarà apportuno fare delle ricerche su google per ottenere una wordlist utile per trovare Nami)
+(il suggerimento fornito da TryHackMe per rispondere alla domanda successiva è: Only Sea, It's Not Terrible, guardando bene le lettere maiuscole la parola è OSINT quindi sarà apportuno fare delle ricerche su google per ottenere una wordlist utile per trovare Nami)
 
 - provvediamo ad eseguire due scansioni delle directories con gobuster, una con una wordlist già presente nel sistema (common.txt va benissimo), l'altra scansione invece con la wordlist trovata tramite OSINT (LogPose.txt)
 
 - gobuster dir -u http://onepiece.thm/  -w /usr/share/wordlists/dirb/common.txt
 
 ![5](https://github.com/Manganaccio/Manganaccio/assets/137283468/ed5bb2a1-65c9-43a7-b802-50f96597f0bf)
+
+- le directories trovate ci saranno utili più avanti
+
+- gobuster dir -u http://onepiece.thm/  -w LogPose.txt   --no-error -x html
+
+![6](https://github.com/Manganaccio/Manganaccio/assets/137283468/9fe35ef8-a693-4f11-ae6e-1dc4929ac8a5)
+
+- 
+
 
 
 
