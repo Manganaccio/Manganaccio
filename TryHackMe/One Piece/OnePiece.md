@@ -151,8 +151,23 @@ You want your revenge. Let's take him down !_
   # Who is on Laugh Tale at the same time as Luffy?
       Answer: Marshall D Teach
 
-  - procediamo ad una ricerca dei file presenti nel sistema
-  - find / -type f -perm -4000 2>/dev/null
+- procediamo ad una ricerca dei file presenti nel sistema
+- find / -type f -perm -4000 2>/dev/null
+
+![14](https://github.com/Manganaccio/Manganaccio/assets/137283468/0b07ec5f-16dd-4c5d-ada6-480d8b9fc0aa)
+
+- si può notare un file con un nome strano, esaminando con il comando _file_ si può notare che è un file eseguibile
+- eseguito il file si può notare che è uno script in python, utile a questo punto per procedere alla scalata dei privilegi
+
+ ![15](https://github.com/Manganaccio/Manganaccio/assets/137283468/ebd3f1d6-c4a7-47de-8e23-e935a77a41e7)
+
+ - per scalare i privilegi bisogna innanzitutto progedere in senso orizzontale, infatti guardando nella directory _teach_ si può notare che nel sistema è presente un altro utente ed il comando _sudo -l_ non è consentito
+ - facendo ricorso a GTFOBins nella sezione Python dobbiamo ricorrere al comando riferito a SUID
+ - ./gomugomunooo_king_kobraaa -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+
+![16](https://github.com/Manganaccio/Manganaccio/assets/137283468/77516e96-0eb1-4a9a-8eb0-b083b0c73658)
+
+
 
 
     
