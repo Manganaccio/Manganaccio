@@ -46,7 +46,7 @@ _____________________
   Nekomamushi: They are written in an ancient language and a very few people around the world can actually read them._
 
   # What is the name of the tree that contains the 1st Road Poneglyph?
-      the whale
+      Answer: the whale
 
 - l'immagine .road_poneglyph.jpeg contiene dei dati che possiamo estrarre attraverso il comando steghide extract -sf .road_poneglyph.jpeg
 - i dati estratti sono una serie di caratteri che possiamo decodificare prima in Base32, poi in codice morse, poi in binary ed infine in hex
@@ -64,20 +64,20 @@ _____________________
 
 - provvediamo ad eseguire due scansioni delle directories con gobuster, una con una wordlist già presente nel sistema (common.txt va benissimo), l'altra scansione invece con la wordlist trovata tramite OSINT (LogPose.txt)
 
-- gobuster dir -u http://onepiece.thm/  -w /usr/share/wordlists/dirb/common.txt
+- gobuster dir -u http://onepiece.thm/ -w /usr/share/wordlists/dirb/common.txt
 
 ![5](https://github.com/Manganaccio/Manganaccio/assets/137283468/ed5bb2a1-65c9-43a7-b802-50f96597f0bf)
 
 - le directories trovate ci saranno utili più avanti
 
-- gobuster dir -u http://onepiece.thm/  -w LogPose.txt   --no-error -x html
+- gobuster dir -u http://onepiece.thm/ -w LogPose.txt --no-error -x html
 
 ![6](https://github.com/Manganaccio/Manganaccio/assets/137283468/9fe35ef8-a693-4f11-ae6e-1dc4929ac8a5)
 
 - visitiamo la directory trovata, possiamo ora rispondere alla seconda domanda
 
 # What is the name of the 1st pirate you meet navigating the Apache Sea?
-    Donquixote Doflamingo
+    Answer: Donquixote Doflamingo
 
 - nella stessa pagina c'è un'immagine nera che al passaggio del mouse scopre un'altra immagine con una serie di informazioni poco chiare, visitiamo quindi il codice sorgente e troviamo l'immagine in chiaro denominata        rabbit_hole.png
 
@@ -85,7 +85,24 @@ _____________________
 
 - decifrato il primo ed il secondo codice otteniamo la chiave decodificare l'ultimo... _Doflamingo is still standing_! Come suggerito dal nome dell'immagine siamo in un vicolo cieco, nessuna informazione utile!
 
-- 
+- per procedere sarà necessario visitare la pagina _css_ trovata con la prima scansione delle directories e nel file _dressrosa_style.css_ ci viene formita una nuova directory _/king_kong_gun.jpg_
+
+- scarichiamo l'immagine e controlliamo i metadati
+
+- exiftool king_kong_gun.jpg
+
+![7](https://github.com/Manganaccio/Manganaccio/assets/137283468/2d821f6f-093c-42d6-8f8f-e7afef095000)
+
+- il risultato ci fornisce una nuova directory da visitare ed una nuova immagine da scaricare _/ko.jpg_
+
+- analizzando le stringhe dell'immagine ci viene fornita la prossima destinazione sottoforma di una nuova directory da visitare, possiamo ora rispondere alla terza domanda
+
+- strings ko.jpg
+
+![8](https://github.com/Manganaccio/Manganaccio/assets/137283468/a86615fa-607b-4c48-8148-feedee4f4868)
+
+# What is the name of the 2nd island you reach navigating the Apache Sea?
+    Answer: Whole Cake
 
 
 
