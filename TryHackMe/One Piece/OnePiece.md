@@ -72,8 +72,8 @@ _____________________
 
 - visitiamo la directory trovata, possiamo ora rispondere alla seconda domanda
 
-# What is the name of the 1st pirate you meet navigating the Apache Sea?
-    Answer: Donquixote Doflamingo
+  # What is the name of the 1st pirate you meet navigating the Apache Sea?
+      Answer: Donquixote Doflamingo
 
 - nella stessa pagina c'è un'immagine nera che al passaggio del mouse scopre un'altra immagine con una serie di informazioni poco chiare, visitiamo quindi il codice sorgente e troviamo l'immagine in chiaro denominata        rabbit_hole.png
 - una volta aperta troviamo tre codici, il primo in esadecimale, il secondo in Base91 ed il terzo è cifrato in Vigenere
@@ -90,7 +90,7 @@ _____________________
 
 ![8](https://github.com/Manganaccio/Manganaccio/assets/137283468/a86615fa-607b-4c48-8148-feedee4f4868)
 
-# What is the name of the 2nd island you reach navigating the Apache Sea?
+  # What is the name of the 2nd island you reach navigating the Apache Sea?
     Answer: Whole Cake
 
 - visitando la pagina troviamo un box dove poter digitare delle parole, ma qualsiasi carattere, parola o frase inseriamo la risposta è _I did not expect that._ 
@@ -101,8 +101,8 @@ _____________________
 
  - navigando nella nuova pagina otteniamo per prima cosa la risposta alla quarta domanda
 
-# What is the name of the friend you meet navigating the Apache Sea?
-Answer: Buggy the Clown
+  # What is the name of the friend you meet navigating the Apache Sea?
+    Answer: Buggy the Clown
 
 - per proseguire nel viaggio Buggy ci chiederà di partecipare ad un gioco, la scelta è ricaduta su _Brain Teaser_. Attraverso questo mini gioco si può ottenere la chiave per proseguire attraverso due modi
 
@@ -111,8 +111,8 @@ Answer: Buggy the Clown
  
 - la nuova pagina contiene diversi elementi che possono tornare utili: la risposta alla quinta domanda, le immagini, due box dove inserie username e password e la possibilità di caricare dei file
 
-# What is the name of the 2nd Emperor you meet navigating the Apache Sea?
-    Answer: Kaido of the Beasts
+  # What is the name of the 2nd Emperor you meet navigating the Apache Sea?
+      Answer: Kaido of the Beasts
 
 - andando per esclusione se dovessimo caricare dei file, ad esempio una reverse shell, non si ottiene elemento utile in quanto non sappiamo dove e come trovare una pagina di upload
 
@@ -132,11 +132,27 @@ Answer: Buggy the Clown
 - visitiamo la pagina _unspecified_ fornita dall'indizio di Kaido e troviamo così la quarta ed ultima parte del Poneglyph da decifrare
 - decifriamo il lungo codice usando in ordine: Base32, codice morse, binary, hex, Base58 e Base64 ed otteniamo le credenziali di accesso che ci permettono di rispondere alla sesta domanda
 
-# What is the hidden message of the 4 Road Poneglyphs?   
-    Answer: M0nk3y_D_7uffy:1_w1ll_b3_th3_p1r@t3_k1ng!
+  # What is the hidden message of the 4 Road Poneglyphs?   
+      Answer: M0nk3y_D_7uffy:1_w1ll_b3_th3_p1r@t3_k1ng!
 
-- riprendiamo la scansione delle porte fatt all'inizio ed accediamo tramite ssh
- 
+# Task 3 - Laugh Tale
+
+_____________________
+
+- riprendiamo la scansione delle porte fatta all'inizio ed accediamo tramite ssh
+- fatto l'accesso leggiamo il file presente nella directory
+- # laugh_tale.txt
+  _Finally, we reached Laugh Tale.
+All is left to do is to find the One Piece.
+Wait, there is another boat in here.
+Be careful, it is the boat of Marshall D Teach, one of the 4 Emperors. He is the one that led your brother Ace to his death.
+You want your revenge. Let's take him down !_
+
+  # Who is on Laugh Tale at the same time as Luffy?
+      Answer: Marshall D Teach
+
+  - procediamo ad una ricerca dei file presenti nel sistema
+  - find / -type f -perm -4000 2>/dev/null
 
 
     
