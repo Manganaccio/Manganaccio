@@ -49,9 +49,7 @@ _____________________
       Answer: the whale
 
 - l'immagine .road_poneglyph.jpeg contiene dei dati che possiamo estrarre attraverso il comando steghide extract -sf .road_poneglyph.jpeg
-- i dati estratti sono una serie di caratteri che possiamo decodificare prima in Base32, poi in codice morse, poi in binary ed infine in hex
-- unavolta decodificato si ottiene una serie di caratteri in Base64, essendo questo il primo di quattro Poneglyph anche a seguito di decodifica non si ottiene alcuna informazione utile
-  
+- i dati estratti sono una serie di caratteri che possiamo sebbene decodifichiamo non ci portano a nessun risultato dovendo trovare tutti e quattro i Poneglyph 
 - visitiamo ora la pagina web essendo la porta 80 aperta
 - guardando il codice sorgente si può notare un'altra frase da decodificare
 
@@ -63,13 +61,11 @@ _____________________
 (il suggerimento fornito da TryHackMe per rispondere alla domanda successiva è: Only Sea, It's Not Terrible, guardando bene le lettere maiuscole la parola è OSINT quindi sarà apportuno fare delle ricerche su google per ottenere una wordlist utile per trovare Nami)
 
 - provvediamo ad eseguire due scansioni delle directories con gobuster, una con una wordlist già presente nel sistema (common.txt va benissimo), l'altra scansione invece con la wordlist trovata tramite OSINT (LogPose.txt)
-
 - gobuster dir -u http://onepiece.thm/ -w /usr/share/wordlists/dirb/common.txt
-
+  
 ![5](https://github.com/Manganaccio/Manganaccio/assets/137283468/ed5bb2a1-65c9-43a7-b802-50f96597f0bf)
 
 - le directories trovate ci saranno utili più avanti
-
 - gobuster dir -u http://onepiece.thm/ -w LogPose.txt --no-error -x html
 
 ![6](https://github.com/Manganaccio/Manganaccio/assets/137283468/9fe35ef8-a693-4f11-ae6e-1dc4929ac8a5)
@@ -80,23 +76,16 @@ _____________________
     Answer: Donquixote Doflamingo
 
 - nella stessa pagina c'è un'immagine nera che al passaggio del mouse scopre un'altra immagine con una serie di informazioni poco chiare, visitiamo quindi il codice sorgente e troviamo l'immagine in chiaro denominata        rabbit_hole.png
-
 - una volta aperta troviamo tre codici, il primo in esadecimale, il secondo in Base91 ed il terzo è cifrato in Vigenere
-
 - decifrato il primo ed il secondo codice otteniamo la chiave decodificare l'ultimo... _Doflamingo is still standing_! Come suggerito dal nome dell'immagine siamo in un vicolo cieco, nessuna informazione utile!
-
 - per procedere sarà necessario visitare la pagina _css_ trovata con la prima scansione delle directories e nel file _dressrosa_style.css_ ci viene formita una nuova directory _/king_kong_gun.jpg_
-
 - scarichiamo l'immagine e controlliamo i metadati
-
 - exiftool king_kong_gun.jpg
 
 ![7](https://github.com/Manganaccio/Manganaccio/assets/137283468/2d821f6f-093c-42d6-8f8f-e7afef095000)
 
 - il risultato ci fornisce una nuova directory da visitare ed una nuova immagine da scaricare _/ko.jpg_
-
 - analizzando le stringhe dell'immagine ci viene fornita la prossima destinazione sottoforma di una nuova directory da visitare, possiamo ora rispondere alla terza domanda
-
 - strings ko.jpg
 
 ![8](https://github.com/Manganaccio/Manganaccio/assets/137283468/a86615fa-607b-4c48-8148-feedee4f4868)
@@ -105,9 +94,7 @@ _____________________
     Answer: Whole Cake
 
 - visitando la pagina troviamo un box dove poter digitare delle parole, ma qualsiasi carattere, parola o frase inseriamo la risposta è _I did not expect that._ 
-
 - analizziamo quindi i cookie e vediamo che il valore fornito è _NoCakeForYou_
-
 - possiamo cambiare questo valore con _cakesforyou_ o semplicemente _cakes_, ricaricando la pagina otteniamo così la seconda parte del Poneglyph da decodificare ed il suggerimento utile per proseguire la navigazione
 
  ![9](https://github.com/Manganaccio/Manganaccio/assets/137283468/b1075d00-798f-4d27-993f-d9d12ae85d2d)
@@ -141,7 +128,14 @@ Answer: Buggy the Clown
    
 ![11](https://github.com/Manganaccio/Manganaccio/assets/137283468/fa70a747-d1ec-43f3-b00d-25c55084c3b0)
 
-- una volta inserite le credenziali 
+- una volta inserite le credenziali otteniamo il codice del terzo Poneglyph ed un'informazione che all'apparenza potrebbe trarci in inganno non specificando la prossima destinazione, ma in fondo la CTF in questione        tratta di pirati quindi sono loro che vogliono ingannarci :)
+- visitiamo la pagina _unspecified_ fornita dall'indizio di Kaido e troviamo così la quarta ed ultima parte del Poneglyph da decifrare
+- decifriamo il lungo codice usando in ordine: Base32, codice morse, binary, hex, Base58 e Base64 ed otteniamo le credenziali di accesso che ci permettono di rispondere alla sesta domanda
+
+# What is the hidden message of the 4 Road Poneglyphs?   
+    Answer: M0nk3y_D_7uffy:1_w1ll_b3_th3_p1r@t3_k1ng!
+
+- riprendiamo la scansione delle porte fatt all'inizio ed accediamo tramite ssh
  
 
 
