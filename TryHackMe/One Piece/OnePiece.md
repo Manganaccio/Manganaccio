@@ -205,7 +205,13 @@ Now, he needs to find the One Piece._
 ![19](https://github.com/Manganaccio/Manganaccio/assets/137283468/fee70c71-ea5c-4ca1-add8-151a27b53a49)
 
 - ottenuti i privilegi di root bisogna cercare il file dove è contenuto il One Piece
-    
+- supponendo che il file abbia l'estensione .txt, ma non sapendo quale possa essere il nome si può semplicemente lanciare il comando locate *.txt
+- i risultati sono veramente tanti, ma un file in particolare cattura l'attenzione...
+
+![20](https://github.com/Manganaccio/Manganaccio/assets/137283468/d906a9c5-724b-471f-bde4-3df20dd4324a)
+
+  # What is the One Piece?
+    Answer: S3cr3ts_0f_tH3_W0rlD_&_0f_Th3_P@st$  
   
      
 
