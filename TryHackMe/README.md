@@ -6,7 +6,7 @@
 
 # [Manganaccio](https://tryhackme.com/p/Manganaccio) (TOP 1%)
   
-  <script> src="https://tryhackme.com/badge/1131274"</script>
+  <img src="https://tryhackme-badges.s3.amazonaws.com/Manganaccio.png" alt="TryHackMe">
   
 *****
 
