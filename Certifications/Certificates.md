@@ -8,6 +8,8 @@
 
 # TryHackMe
 
+![THM-PreSecurity](https://github.com/Manganaccio/Manganaccio/assets/137283468/8d2acae3-77b1-4870-904d-df6271bb53c5)
+
 ![THM-CompleteBeginner](https://github.com/Manganaccio/Manganaccio/assets/137283468/ebadae33-6a92-4a9b-aacc-00d17d9b3840)
 
 ![THM-WebFoundamentalLearningPath](https://github.com/Manganaccio/Manganaccio/assets/137283468/e7f66f62-cf51-47f1-9060-da6388251c12)
