@@ -2,6 +2,7 @@
 
 ![Introduction-to-Dark-Web-Operations-course-1](https://github.com/Manganaccio/Manganaccio/assets/137283468/a0ef49f6-55ae-4f3a-bdea-675f4d7c3ec0)
 
+![Introduction-to-OSINT-course-1](https://github.com/Manganaccio/Manganaccio/assets/137283468/e7155ceb-f763-4c35-9179-8063d6245739)
 
 # TryHackMe
 
