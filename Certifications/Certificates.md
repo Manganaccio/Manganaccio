@@ -1,6 +1,6 @@
 # Security Blue Team
 
-[Introduction to Dark Web Operations-course.pdf](https://github.com/Manganaccio/Manganaccio/files/13112824/Introduction.to.Dark.Web.Operations-course.pdf)
+![Introduction-to-Dark-Web-Operations-course-1](https://github.com/Manganaccio/Manganaccio/assets/137283468/a0ef49f6-55ae-4f3a-bdea-675f4d7c3ec0)
 
 
 # TryHackMe
