@@ -29,7 +29,7 @@ Tutto il materiale che pubblicherò sarà trattato in forma di divulgativa e di 
 
 📸 Instagram: [m4ng4nacc10.py](https://www.instagram.com/m4ng4nacc10.py/)
 
-💻 TryHackMe: [Manganaccio](https://tryhackme.com/p/Manganaccio) - [Refferral](https://tryhackme.com/signup?referrer=628f6b890b5d98005416e17a) per ottenere 5$ di sconto sull'abbonamento premium.
+💻 TryHackMe: [Manganaccio](https://tryhackme.com/p/Manganaccio) - [Referral](https://tryhackme.com/signup?referrer=628f6b890b5d98005416e17a) per ottenere 5$ di sconto sull'abbonamento premium.
 <!---
 Manganaccio/Manganaccio is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
