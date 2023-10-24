@@ -1,10 +1,7 @@
-# Code Red
+# Security Blue Team
 
-![WindowsPenetretionTestingEssential](https://github.com/Manganaccio/Manganaccio/assets/137283468/1a297c9f-d1c8-43b6-82e4-9fdf64717448)
+[Introduction to Dark Web Operations-course.pdf](https://github.com/Manganaccio/Manganaccio/files/13112824/Introduction.to.Dark.Web.Operations-course.pdf)
 
-![ComputerForensicsBestPractices](https://github.com/Manganaccio/Manganaccio/assets/137283468/2d3a4a20-ba77-4bf7-8dd5-00a55556c9e3)
-
-![CommonCybersecurityAttacksAndDefenseStrategies](https://github.com/Manganaccio/Manganaccio/assets/137283468/48a1d5b9-b04b-4025-a1bb-1222cf1893f9)
 
 # TryHackMe
 
@@ -20,3 +17,10 @@
 
 ![THM-CyberDefence](https://github.com/Manganaccio/Manganaccio/assets/137283468/5f56f38f-a558-4610-a160-494747dbd6f1)
 
+# Code Red
+
+![WindowsPenetretionTestingEssential](https://github.com/Manganaccio/Manganaccio/assets/137283468/1a297c9f-d1c8-43b6-82e4-9fdf64717448)
+
+![ComputerForensicsBestPractices](https://github.com/Manganaccio/Manganaccio/assets/137283468/2d3a4a20-ba77-4bf7-8dd5-00a55556c9e3)
+
+![CommonCybersecurityAttacksAndDefenseStrategies](https://github.com/Manganaccio/Manganaccio/assets/137283468/48a1d5b9-b04b-4025-a1bb-1222cf1893f9)
