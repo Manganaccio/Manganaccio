@@ -23,7 +23,7 @@ _________
 
 - utilizziamo nuovamente gobuster per trovare ulteriori directories
 
-- gobuster dir -u http://10.10.156.167/sitemap -w /usr/share/wordlists/dirb/big.txt  --no-error -t 200 -x php,html
+- gobuster dir -u http://wgel.thm/sitemap -w /usr/share/wordlists/dirb/big.txt  --no-error -t 200 -x php,html
 
 ![4](https://github.com/Manganaccio/Manganaccio/assets/137283468/fa5a9ca9-ecde-44db-9eba-52ed7e9d9972)
 
