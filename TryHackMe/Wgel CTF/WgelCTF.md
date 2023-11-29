@@ -30,7 +30,7 @@ _________
 - si noti tra le nuove directories ".ssh", accedendo troviamo un file denominato _id_rsa_ utile per fare l'accesso tramite SSH
 - salviamo il contenuto in un file di testo e settiamo i permessi tramite il comando _chmod 600 id_rsa_
 - facciamo l'accesso al servizio SSH con il nome utente trovato in precedenza eseguendo il seguente comando
-- ssh jessie@10.10.156.167 -i id_rsa
+- ssh jessie@wgel.thm -i id_rsa
 
 # User flag
 
