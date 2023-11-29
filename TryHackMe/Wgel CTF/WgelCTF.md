@@ -14,7 +14,7 @@ _________
 
 ![Screenshot_2023-10-09_22-11-06](https://github.com/Manganaccio/Manganaccio/assets/137283468/79b5a617-4280-4f9a-ba32-5b51d673ad14)
 
-- viene fornito un possibile username con il quale fare l'accesso tramite SSH
+- viene fornito un possibile username
 - facciamo uno scan delle directories con gobuster
 
 - gobuster dir -u http://wgel.thm -w /usr/share/wordlists/dirb/big.txt  --no-error -t 200
@@ -27,3 +27,13 @@ _________
 
 ![4](https://github.com/Manganaccio/Manganaccio/assets/137283468/fa5a9ca9-ecde-44db-9eba-52ed7e9d9972)
 
+- si noti tra le nuove directories ".ssh", accedendo troviamo un file denominato _id_rsa_ utile per fare l'accesso tramite SSH
+- salviamo il contenuto in un file di testo e settiamo i permessi tramite il comando _chmod 600 id_rsa_
+- facciamo l'accesso al servizio SSH con il nome utente trovato in precedenza eseguendo il seguente comando
+- ssh jessie@10.10.156.167 -i id_rsa
+
+# User flag
+
+- una volta eseguito l'accesso nella directory Documents troviamo la prima flag
+
+      Answer: 057c67131c3d5e42dd5cd3075b198ff6 
