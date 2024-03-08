@@ -1,6 +1,7 @@
 # Security Blue Team
 
-[Blue Team Level 1-Certification.pdf](https://github.com/Manganaccio/Manganaccio/files/14544142/Blue.Team.Level.1-Certification.pdf)
+![Blue Team Level 1-Certification](https://github.com/Manganaccio/Manganaccio/assets/137283468/382fac6a-1baf-43f0-85fd-3ff898c6bd0a)
+
 
 ![Introduction-to-Dark-Web-Operations-course-1](https://github.com/Manganaccio/Manganaccio/assets/137283468/a0ef49f6-55ae-4f3a-bdea-675f4d7c3ec0)
 
