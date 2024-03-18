@@ -2,12 +2,13 @@
 
 ![Blue Team Level 1-Certification](https://github.com/Manganaccio/Manganaccio/assets/137283468/382fac6a-1baf-43f0-85fd-3ff898c6bd0a)
 
-
 ![Introduction-to-Dark-Web-Operations-course-1](https://github.com/Manganaccio/Manganaccio/assets/137283468/a0ef49f6-55ae-4f3a-bdea-675f4d7c3ec0)
 
 ![Introduction-to-OSINT-course-1](https://github.com/Manganaccio/Manganaccio/assets/137283468/e7155ceb-f763-4c35-9179-8063d6245739)
 
 # TryHackMe
+
+![THM-SOC-Level-1](https://github.com/Manganaccio/Manganaccio/assets/137283468/fc191884-c357-4b0b-823a-5935a8705fa6)
 
 ![THM-PreSecurity](https://github.com/Manganaccio/Manganaccio/assets/137283468/8d2acae3-77b1-4870-904d-df6271bb53c5)
 
