@@ -22,9 +22,17 @@
 
 ![THM-CyberDefence](https://github.com/Manganaccio/Manganaccio/assets/137283468/5f56f38f-a558-4610-a160-494747dbd6f1)
 
+# SOC Radar
+
+![Dark-Web_Fundamentals](https://github.com/user-attachments/assets/eba6124f-a486-4865-ac09-1d0614a7a74e)
+
+# ArcX
+
+![CTI-101](https://github.com/user-attachments/assets/5799d8d1-1684-4bb9-b75c-6858dbf69578)
+
 # Udemy
 
-
+![Metasploit](https://github.com/user-attachments/assets/3edacdfc-67d5-45ac-923f-cac31285df99)
 
 # Code Red
 
